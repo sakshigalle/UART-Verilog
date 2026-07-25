@@ -1,0 +1,58 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "E:\VIVADO\iverilog\lib\ivl\system.vpi";
+:vpi_module "E:\VIVADO\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "E:\VIVADO\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "E:\VIVADO\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "E:\VIVADO\iverilog\lib\ivl\va_math.vpi";
+S_0000026bc1145a10 .scope module, "xor_gate_tb" "xor_gate_tb" 2 3;
+ .timescale -9 -12;
+v0000026bc11130e0_0 .var "A", 0 0;
+v0000026bc12688b0_0 .var "B", 0 0;
+v0000026bc1268950_0 .net "Y", 0 0, L_0000026bc1113180;  1 drivers
+S_0000026bc1145ba0 .scope module, "uut" "xor_gate" 2 8, 3 1 0, S_0000026bc1145a10;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /OUTPUT 1 "Y";
+L_0000026bc1113180 .functor XOR 1, v0000026bc11130e0_0, v0000026bc12688b0_0, C4<0>, C4<0>;
+v0000026bc11135d0_0 .net "A", 0 0, v0000026bc11130e0_0;  1 drivers
+v0000026bc11137f0_0 .net "B", 0 0, v0000026bc12688b0_0;  1 drivers
+v0000026bc12686d0_0 .net "Y", 0 0, L_0000026bc1113180;  alias, 1 drivers
+    .scope S_0000026bc1145a10;
+T_0 ;
+    %vpi_call 2 15 "$dumpfile", "xor_gate.vcd" {0 0 0};
+    %vpi_call 2 16 "$dumpvars", 32'sb00000000000000000000000000000000, S_0000026bc1145a10 {0 0 0};
+    %vpi_call 2 18 "$display", "A B | Y" {0 0 0};
+    %vpi_call 2 19 "$monitor", "%b %b | %b", v0000026bc11130e0_0, v0000026bc12688b0_0, v0000026bc1268950_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000026bc11130e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000026bc12688b0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000026bc11130e0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000026bc12688b0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000026bc11130e0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0000026bc12688b0_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000026bc11130e0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0000026bc12688b0_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 26 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "01-Logic-Gates/tb/xor_gate_tb.v";
+    "01-Logic-Gates/rtl/xor_gate.v";

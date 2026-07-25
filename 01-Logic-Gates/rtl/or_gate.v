@@ -6,4 +6,4 @@ module or_gate (
 
 assign Y = A | B;
 
-endmodule
+endmodule 
