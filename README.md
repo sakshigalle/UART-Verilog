@@ -1,7 +1,6 @@
 
-<p align="center">
-  <img src="banner.png" width="100%">
-</p>
+
+
 
 # Verilog HDL Projects
 
@@ -17,7 +16,6 @@ A comprehensive collection of Verilog HDL projects covering digital logic design
 
 # 📘 What is Verilog HDL Projects?
 
-<img align="right" width="42%" src="assets/waveform.png">
 
 This repository is a structured learning and implementation portfolio for digital hardware design using **Verilog HDL**.
 
