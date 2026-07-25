@@ -1,2 +1,169 @@
-# UART-Verilog
-UART (Universal Asynchronous Receiver Transmitter) implemented in Verilog HDL.
+
+<p align="center">
+  <img src="banner.png" width="100%">
+</p>
+
+# Verilog HDL Projects
+
+[![Language](https://img.shields.io/badge/Language-Verilog-blue.svg)]()
+[![Simulator](https://img.shields.io/badge/Simulator-Icarus%20Verilog-success.svg)]()
+[![Waveforms](https://img.shields.io/badge/Waveforms-GTKWave-orange.svg)]()
+[![Editor](https://img.shields.io/badge/Editor-VS%20Code-007ACC.svg)]()
+
+
+A comprehensive collection of Verilog HDL projects covering digital logic design, RTL implementation, simulation, waveform analysis, communication protocols, and processor design.
+
+---
+
+# 📘 What is Verilog HDL Projects?
+
+<img align="right" width="42%" src="assets/waveform.png">
+
+This repository is a structured learning and implementation portfolio for digital hardware design using **Verilog HDL**.
+
+Each project includes:
+
+- ✅ RTL Design
+- ✅ Testbench
+- ✅ Simulation
+- ✅ GTKWave Waveforms
+- ✅ Documentation
+
+The repository begins with basic combinational logic circuits and gradually progresses toward advanced digital systems such as **UART, SPI, I2C, FIFO, and a RISC-V Processor**.
+
+---
+
+# 📂 Repository Structure
+
+| Folder | Description |
+|---------|-------------|
+| 📁 01-Logic-Gates | Basic logic gates (AND, OR, NOT, NAND, NOR, XOR, XNOR) |
+| 📁 02-Multiplexer | Multiplexers and Demultiplexers |
+| 📁 03-Encoder-Decoder | Encoders and Decoders |
+| 📁 04-Adders-Subtractors | Half Adder, Full Adder, Subtractor |
+| 📁 05-ALU | Arithmetic Logic Unit |
+| 📁 06-Flip-Flops | SR, D, JK, T Flip-Flops |
+| 📁 07-Counters | Synchronous and Asynchronous Counters |
+| 📁 08-Traffic-Light-Controller | FSM-based Traffic Light Controller |
+| 📁 09-UART | Universal Asynchronous Receiver Transmitter |
+| 📁 10-SPI | Serial Peripheral Interface |
+| 📁 11-I2C | Inter-Integrated Circuit |
+| 📁 12-FIFO | First-In First-Out Memory |
+| 📁 13-RISCV-Processor | Single-Cycle RISC-V Processor |
+
+---
+
+# 🛠 Tools Used
+
+| Tool | Purpose |
+|------|---------|
+| Verilog HDL | RTL Design |
+| Icarus Verilog | Compilation & Simulation |
+| GTKWave | Waveform Viewer |
+| Git | Version Control |
+| GitHub | Repository Hosting |
+| Visual Studio Code | Code Editor |
+
+---
+
+# 🚀 Getting Started
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/sakshigalle/Verilog-HDL-Projects.git
+
+cd Verilog-HDL-Projects
+```
+
+## 2. Compile
+
+Example (AND Gate)
+
+```bash
+iverilog -o sim \
+01-Logic-Gates/rtl/and_gate.v \
+01-Logic-Gates/tb/and_gate_tb.v
+```
+
+## 3. Run Simulation
+
+```bash
+vvp sim
+```
+
+## 4. Open Waveform
+
+```bash
+gtkwave and_gate.vcd
+```
+
+---
+
+# 📸 Waveforms
+
+### AND Gate
+
+<p align="center">
+<img src="01-Logic-Gates/waveforms/and_gate_waveform.png" width="80%">
+</p>
+
+### OR Gate
+
+<p align="center">
+<img src="01-Logic-Gates/waveforms/or_gate_waveform.png" width="80%">
+</p>
+
+### NOT Gate
+
+<p align="center">
+<img src="01-Logic-Gates/waveforms/not_gate_waveform.png" width="80%">
+</p>
+
+### NAND Gate
+
+<p align="center">
+<img src="01-Logic-Gates/waveforms/nand_gate_waveform.png" width="80%">
+</p>
+
+### NOR Gate
+
+<p align="center">
+<img src="01-Logic-Gates/waveforms/nor_gate_waveform.png" width="80%">
+</p>
+
+---
+
+# 🎯 Roadmap
+
+- [x] Logic Gates
+- [ ] Multiplexers
+- [ ] Encoders & Decoders
+- [ ] Adders & Subtractors
+- [ ] ALU
+- [ ] Flip-Flops
+- [ ] Counters
+- [ ] Traffic Light Controller
+- [ ] UART
+- [ ] SPI
+- [ ] I2C
+- [ ] FIFO
+- [ ] RISC-V Processor
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome!
+
+If you would like to improve the repository:
+
+- Report bugs using GitHub Issues.
+- Submit feature requests.
+- Open a Pull Request with your improvements.
+
+---
+
+# ⭐ Support
+
+If you found this repository useful, consider giving it a ⭐ on GitHub.
