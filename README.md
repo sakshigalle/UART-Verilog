@@ -1,7 +1,3 @@
-
-
-
-
 # Verilog HDL Projects
 
 [![Language](https://img.shields.io/badge/Language-Verilog-blue.svg)]()
@@ -9,29 +5,27 @@
 [![Waveforms](https://img.shields.io/badge/Waveforms-GTKWave-orange.svg)]()
 [![Editor](https://img.shields.io/badge/Editor-VS%20Code-007ACC.svg)]()
 
-
-A comprehensive collection of Verilog HDL projects covering digital logic design, RTL implementation, simulation, waveform analysis, communication protocols, and processor design.
+A comprehensive collection of **Verilog HDL projects** covering digital logic design, RTL implementation, simulation, waveform analysis, communication protocols, and processor design.
 
 ---
 
-# 📘 What is Verilog HDL Projects?
+# Overview
 
-
-This repository is a structured learning and implementation portfolio for digital hardware design using **Verilog HDL**.
+This repository is a structured learning portfolio for digital hardware design using **Verilog HDL**.
 
 Each project includes:
 
-- ✅ RTL Design
-- ✅ Testbench
-- ✅ Simulation
-- ✅ GTKWave Waveforms
-- ✅ Documentation
+- ✔ RTL Design
+- ✔ Testbench
+- ✔ Simulation
+- ✔ GTKWave Waveforms
+- ✔ Documentation
 
-The repository begins with basic combinational logic circuits and gradually progresses toward advanced digital systems such as **UART, SPI, I2C, FIFO, and a RISC-V Processor**.
+The repository begins with fundamental combinational logic circuits and progressively covers advanced digital systems such as **UART, SPI, I²C, FIFO, and a RISC-V Processor**.
 
 ---
 
-# 📂 Repository Structure
+# Repository Structure
 
 | Folder | Description |
 |---------|-------------|
@@ -51,22 +45,22 @@ The repository begins with basic combinational logic circuits and gradually prog
 
 ---
 
-# 🛠 Tools Used
+# Tools
 
 | Tool | Purpose |
 |------|---------|
 | Verilog HDL | RTL Design |
 | Icarus Verilog | Compilation & Simulation |
-| GTKWave | Waveform Viewer |
+| GTKWave | Waveform Analysis |
 | Git | Version Control |
 | GitHub | Repository Hosting |
 | Visual Studio Code | Code Editor |
 
 ---
 
-# 🚀 Getting Started
+# Getting Started
 
-## 1. Clone the Repository
+## Clone the Repository
 
 ```bash
 git clone https://github.com/sakshigalle/Verilog-HDL-Projects.git
@@ -74,7 +68,7 @@ git clone https://github.com/sakshigalle/Verilog-HDL-Projects.git
 cd Verilog-HDL-Projects
 ```
 
-## 2. Compile
+## Compile
 
 Example (AND Gate)
 
@@ -84,13 +78,13 @@ iverilog -o sim \
 01-Logic-Gates/tb/and_gate_tb.v
 ```
 
-## 3. Run Simulation
+## Run Simulation
 
 ```bash
 vvp sim
 ```
 
-## 4. Open Waveform
+## Open Waveform
 
 ```bash
 gtkwave and_gate.vcd
@@ -98,7 +92,7 @@ gtkwave and_gate.vcd
 
 ---
 
-# 📸 Waveforms
+# Waveforms
 
 ### AND Gate
 
@@ -132,36 +126,38 @@ gtkwave and_gate.vcd
 
 ---
 
-# 🎯 Roadmap
+# Learning Roadmap
 
-- [x] Logic Gates
-- [ ] Multiplexers
-- [ ] Encoders & Decoders
-- [ ] Adders & Subtractors
-- [ ] ALU
-- [ ] Flip-Flops
-- [ ] Counters
-- [ ] Traffic Light Controller
-- [ ] UART
-- [ ] SPI
-- [ ] I2C
-- [ ] FIFO
-- [ ] RISC-V Processor
-
----
-
-# 🤝 Contributing
-
-Contributions are welcome!
-
-If you would like to improve the repository:
-
-- Report bugs using GitHub Issues.
-- Submit feature requests.
-- Open a Pull Request with your improvements.
+- ✅ Logic Gates
+- ⬜ Multiplexers
+- ⬜ Encoders & Decoders
+- ⬜ Adders & Subtractors
+- ⬜ Arithmetic Logic Unit (ALU)
+- ⬜ Flip-Flops
+- ⬜ Counters
+- ⬜ Traffic Light Controller
+- ⬜ UART
+- ⬜ SPI
+- ⬜ I²C
+- ⬜ FIFO
+- ⬜ RISC-V Processor
 
 ---
 
-# ⭐ Support
+# Contributing
+
+Contributions are welcome.
+
+If you'd like to improve this repository:
+
+- Open an Issue to report bugs or suggest features.
+- Fork the repository.
+- Submit a Pull Request with your improvements.
+
+---
+
+# Support
 
 If you found this repository useful, consider giving it a ⭐ on GitHub.
+
+Happy Coding!
