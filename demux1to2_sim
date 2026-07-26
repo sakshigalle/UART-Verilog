@@ -1,0 +1,68 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1110-g18392a46)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "E:\VIVADO\iverilog\lib\ivl\system.vpi";
+:vpi_module "E:\VIVADO\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "E:\VIVADO\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "E:\VIVADO\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "E:\VIVADO\iverilog\lib\ivl\va_math.vpi";
+S_000001357750a260 .scope module, "demux1to2_tb" "demux1to2_tb" 2 3;
+ .timescale -9 -12;
+v00000135773e2f60_0 .var "I", 0 0;
+v00000135773e3000_0 .var "S", 0 0;
+v00000135773e30a0_0 .net "Y0", 0 0, L_000001357745e160;  1 drivers
+v000001357745da80_0 .net "Y1", 0 0, L_000001357745e340;  1 drivers
+S_000001357750b740 .scope module, "uut" "demux1to2" 2 11, 3 1 0, S_000001357750a260;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "I";
+    .port_info 1 /INPUT 1 "S";
+    .port_info 2 /OUTPUT 1 "Y0";
+    .port_info 3 /OUTPUT 1 "Y1";
+L_000001357750dcc0 .functor NOT 1, v00000135773e3000_0, C4<0>, C4<0>, C4<0>;
+v00000135773e35d0_0 .net "I", 0 0, v00000135773e2f60_0;  1 drivers
+v0000013577416450_0 .net "S", 0 0, v00000135773e3000_0;  1 drivers
+v00000135775093f0_0 .net "Y0", 0 0, L_000001357745e160;  alias, 1 drivers
+v00000135773e2ce0_0 .net "Y1", 0 0, L_000001357745e340;  alias, 1 drivers
+v00000135773e2d80_0 .net *"_ivl_0", 0 0, L_000001357750dcc0;  1 drivers
+L_000001357745e868 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v00000135773e2e20_0 .net/2u *"_ivl_2", 0 0, L_000001357745e868;  1 drivers
+L_000001357745e8b0 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v00000135773e2ec0_0 .net/2u *"_ivl_6", 0 0, L_000001357745e8b0;  1 drivers
+L_000001357745e160 .functor MUXZ 1, L_000001357745e868, v00000135773e2f60_0, L_000001357750dcc0, C4<>;
+L_000001357745e340 .functor MUXZ 1, L_000001357745e8b0, v00000135773e2f60_0, v00000135773e3000_0, C4<>;
+    .scope S_000001357750a260;
+T_0 ;
+    %vpi_call 2 20 "$dumpfile", "demux1to2.vcd" {0 0 0};
+    %vpi_call 2 21 "$dumpvars", 32'sb00000000000000000000000000000000, S_000001357750a260 {0 0 0};
+    %vpi_call 2 23 "$display", "I S | Y0 Y1" {0 0 0};
+    %vpi_call 2 24 "$monitor", "%b %b | %b  %b", v00000135773e2f60_0, v00000135773e3000_0, v00000135773e30a0_0, v000001357745da80_0 {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000135773e2f60_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000135773e3000_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000135773e2f60_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000135773e3000_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v00000135773e2f60_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000135773e3000_0, 0, 1;
+    %delay 10000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000135773e2f60_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v00000135773e3000_0, 0, 1;
+    %delay 10000, 0;
+    %vpi_call 2 38 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "02-Multiplexer/tb/demux1to2_tb.v";
+    "02-Multiplexer/rtl/demux1to2.v";
