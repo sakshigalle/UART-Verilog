@@ -129,9 +129,9 @@ gtkwave and_gate.vcd
 # Learning Roadmap
 
 - ✅ Logic Gates
-- ⬜ Multiplexers
-- ⬜ Encoders & Decoders
-- ⬜ Adders & Subtractors
+- ✅️ Multiplexers
+- ✅️ Encoders & Decoders
+- ⌛️ Adders & Subtractors
 - ⬜ Arithmetic Logic Unit (ALU)
 - ⬜ Flip-Flops
 - ⬜ Counters
